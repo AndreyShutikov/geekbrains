@@ -22,17 +22,17 @@ public class ex2
         //4-ое
         System.out.println();
         System.out.println("Задание № 4");
-        System.out.println(  amount(5,11));
+        System.out.println(  compareTheAmount(5,11));
 
         //5-ое
         System.out.println();
         System.out.println("Задание № 5");
-        comparison(50);
+        checkingNumber(50);
 
         //6-ое
         System.out.println();
         System.out.println("Задание № 6");
-        System.out.println (comparison6(-50));
+        System.out.println (checkingNumberBoolean(-50));
 
         //7-ое
         System.out.println();
@@ -42,19 +42,19 @@ public class ex2
         //8-ое
         System.out.println();
         System.out.println("Задание № 8");
-        year(2300);
-        year(2000);
+        checkingYear(2300);
+        checkingYear(2000);
     }
 
 
     //3-е задание
-    static  float sum (int a,int b, int c, int d)
+    static  float evaluatedExpression (float a,float b, float c, float d)
     {
         return (a * (b + (c / d)));
     }
 
     //4-ое задание
-    static  boolean amount(int firstNumber, int secondNumber)
+    static  boolean compareTheAmount(int firstNumber, int secondNumber)
     {
         int sum=firstNumber+secondNumber;
         if (sum>=10 && sum<=20)
@@ -63,7 +63,7 @@ public class ex2
     }
 
     // 5-ое задание
-    static void comparison (int number)
+    static void checkingNumber (int number)
     {
         if ( number>=0)
             System.out.println( number +" - положительное число, либо равно 0 "  );
@@ -72,7 +72,7 @@ public class ex2
     }
 
     //6-ое задание
-    static   boolean comparison6 (int number)
+    static   boolean checkingNumberBoolean (int number)
     {
         if (number < 0) return true;
         else return false;
@@ -86,7 +86,7 @@ public class ex2
 
 
     //8-ое задание
-    static void year(int y)
+    static void checkingYear(int y)
     {
         if ((y % 400 == 0) || ((y % 4 == 0) && (y % 100 != 0)))
             System.out.println(y +" - високосный год  ");
